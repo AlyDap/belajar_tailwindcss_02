@@ -3,21 +3,123 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Link font style -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200;400;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Document</title>
 		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 		<script src="3.3.5_script.js"></script>
 		<style type="text/tailwindcss">
-			* {
-				border: 1px solid #abbdab;
+			div {
+				border: 1px solid #e90ae9;
+			}
+			h2 {
+				border: 1px solid rgb(4, 224, 15);
 			}
 		</style>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						spacing: {
+							15: "10px",
+						},
+						fontFamily: {
+							saira: "Saira Extra Condensed",
+						},
+						colors: {
+							ali: "#bada55",
+							kopi: "#c0ffee",
+						},
+					},
+				},
+			};
+		</script>
 	</head>
-
+	<!-- ctrl+K shortcut search pada tailwind -->
 	<body>
-		<h1>halo</h1>
-		<section>
-			<h2 class="">Spacing</h2>
-			<div class="m-4">margin</div>
+		<h1
+			class="text-6xl mt-3 mb-9 text-center font-semibold bg-gradient-to-r from-cyan-500 to-blue-500"
+		>
+			BELAJAR
+			<span
+				class="bg-gradient-to-r from-fuchsia-500 to-red-600 bg-clip-text text-transparent"
+				>TAILWINDS</span
+			>
+		</h1>
+		<section class="mb-10 bg-slate-300">
+			<h2 class="text-center bg-amber-200">SPACING</h2>
+			<div class="p-15">Margin semua</div>
+			<div class="my-2">Margin sumbu y</div>
+			<div class="mx-2">Margin sumbu x</div>
+			<div class="mr-2">Margin kanan</div>
+			<div class="-ml-2">minus Margin kiri</div>
+			<h2 class="text-right bg-teal-300">PADDING</h2>
+			<div class="p-15">Padding semua</div>
+			<div class="py-2">Padding sumbu y</div>
+			<div class="px-2">Padding sumbu x</div>
+			<div class="pr-2">Padding kanan</div>
+			<div class="pl-2">Padding kiri</div>
+		</section>
+		<section class="mb-10 bg-kopi">
+			<h2 class="max-w-xs text-center bg-ali">SIZING</h2>
+			<div class="w-24">width 24</div>
+			<div class="w-1/2">width 1/2</div>
+			<div class="w-full">width full</div>
+			<div class="w-fit">width fit</div>
+			<div class="">HEIGHT</div>
+			<div class="h-10">height 10</div>
+		</section>
+		<section
+			class="min-h-screen mx-auto max-w-md bg-gradient-to-bl from-indigo-500 via-purple-500 to-pink-500"
+		>
+			<p class="mb-5 text-5xl font-black">TYPOGRAFI</p>
+			<!-- https://fonts.google.com/ -->
+			<p class="mb-4">
+				By <span class="font-semibold text-red-500">Ali</span>, 30 November 2023
+			</p>
+			<p class="mb-4 font-serif font-semibold">
+				<a
+					href="https://fonts.google.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="underline font-thin italic text-blue-500"
+					>Lorem</a
+				>
+				ipsum, dolor sit amet consectetur adipisicing
+				<a
+					href="https://tailwindcss.com/docs/font-size"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="underline font-thin italic text-violet-500"
+					>elit</a
+				>
+				. Recusandae sed iste doloribus fugiat. Placeat necessitatibus itaque atque
+				dolores accusantium, earum ipsum consectetur cum totam autem qui ipsa
+				voluptates sunt mollitia dignissimos natus iure laudantium sequi fugiat
+				delectus fugit. Officia, pariatur? Repudiandae ratione dolore esse quae
+				officiis, natus pariatur aperiam deleniti.
+			</p>
+			<blockquote class="mb-4 font-mono italic">
+				"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste nihil a et
+				sed dolor qui reprehenderit. Odio earum deserunt cum excepturi vitae
+				laudantium sapiente quam, officiis eum ex veritatis maxime eveniet qui! Modi
+				impedit voluptatem id quo aliquid vitae?"
+			</blockquote>
+			<p class="mb-4 font-saira">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui atque officia
+				quae, quis doloribus laudantium doloremque! Repudiandae libero possimus
+				deserunt quia illum fugiat incidunt nulla, odio recusandae, maiores
+				similique veritatis expedita sed vel accusamus consequuntur doloribus itaque
+				quisquam quis. Non, nam soluta eligendi aliquam quia repellat necessitatibus
+				suscipit, reiciendis hic ab aut sunt veritatis dolore! Distinctio ad
+				repudiandae adipisci! Officia sapiente animi magnam, dolore adipisci aliquid
+				impedit ullam praesentium tempora.
+			</p>
 		</section>
 	</body>
 </html>
