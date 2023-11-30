@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Link font style -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200;400;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
+		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+		<script src="3.3.5_script.js"></script>
+		<style type="text/tailwindcss">
+			/* div {
+				border: 1px solid #e90ae9;
+			} */
+			h2 {
+				border: 1px solid rgb(4, 224, 15);
+			}
+		</style>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						spacing: {
+							15: "10px",
+						},
+						fontFamily: {
+							saira: "Saira Extra Condensed",
+						},
+						colors: {
+							ali: "#bada55",
+							kopi: "#c0ffee",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<!-- ctrl+K shortcut search pada tailwind -->
+	<body>
+		<h1
+			class="text-6xl mt-3 mb-9 text-center font-semibold bg-gradient-to-r from-cyan-500 to-blue-500"
+		>
+			BELAJAR
+			<span
+				class="bg-gradient-to-r from-fuchsia-500 to-red-600 bg-clip-text text-transparent"
+				>TAILWINDS</span
+			>
+		</h1>
+		<hr class="my-2" />
+		<button
+			class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-saira block mx-auto hover:bg-slate-700 active:bg-slate-400 focus:ring focus:ring-sky-600"
+		>
+			Simpan
+		</button>
+		<div
+			class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md hover:bg-slate-900 group"
+		>
+			<h5 class="font-bold text-slate-700 group-hover:text-sky-300 mb-3">
+				My Card
+			</h5>
+			<p
+				class="text-slate-600 group-hover:text-sky-200 selection:bg-black first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3"
+			>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus,
+				magni error? Doloremque vero sapiente excepturi corrupti, mollitia veritatis
+				reprehenderit esse velit harum suscipit porro distinctio nostrum quod ut
+				omnis optio minus laborum eveniet magni nemo nihil voluptatum, veniam
+				facere. Nemo commodi iste sit voluptas laborum alias laboriosam placeat sunt
+				perspiciatis.
+			</p>
+		</div>
+		<div
+			class="max-w-lg border border-slate-200 rounded-xl mx-auto shadow-md p-5"
+		>
+			<form action="">
+				<label for="email">
+					<span
+						class="block font-semibold mb-1 to-slate-700 after:content-['*'] after:text-pink-500 after:ml-0.5"
+						>Email</span
+					>
+					<input
+						type="text"
+						id="email"
+						class="px-3 py-2 border shadow rounded w-full block text-sm placeholder:to-slate-400 focus:outline-none focus:ring-1 focus:ring-cyan-400 focus:border-cyan-400"
+						placeholder="Masukan Email..."
+					/>
+				</label>
+			</form>
+		</div>
+
+		<div class="mb-96 mt-96 h-4 bg-slate-600"></div>
+	</body>
+</html>
